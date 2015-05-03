@@ -1,21 +1,3 @@
-### About Theme
-
-Theme Name: Lemon
-Theme URI: http://github.wobootstrap.com/lemon/
-Version: 1.5.0
-Tested up to: WP 4.1
-
-Author: WoBootstrap.com
-Author URI: http://wobootstrap.com/
-License: GNU General Public License v3.0
-License URI: http://www.gnu.org/licenses/gpl.html
-
-Lemon Wordpress Theme, Copyright 2015 WoBootstrap.com
-Lemon Wordpress Theme is distributed under the terms of the GNU GPL
-Lemon Wordpress Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-
-### Description
-
 Lemon is a WordPress starter theme based on Bootstrap and Underscores.
 
 ### Theme Features
