@@ -1,0 +1,573 @@
+/*
+Theme Name: Lemon
+Theme URI: http://github.wobootstrap.com/lemon/
+Author: WoBootstrap.com
+Author URI: http://wobootstrap.com/
+Description: Lemon is a WordPress starter theme based on Bootstrap and Underscores.
+Version: 1.5.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lemon
+Tags: black, gray, white, dark, light, two-columns, left-sidebar, responsive-layout, accessibility-ready, custom-menu, editor-style, featured-images, post-formats, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/**
+ * 1.0 - Accessibility
+ */
+/* Text meant only for screen readers */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar */ }
+
+/**
+ * 1.0 - Grid System
+ */
+/* Set the container width, and override it for fixed navbars in media queries. */
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px; } }
+
+/**
+ * 1.0 - CSS
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700; }
+
+/**
+ * 1.0 - Masthead
+ */
+.site-header .navbar {
+  margin-bottom: 0; }
+
+/**
+ * 1.0 - Page Header
+ */
+.page-header {
+  margin: 0;
+  padding: 50px 0;
+  border-color: #ecf0f1;
+  line-height: 30px; }
+
+.page-title {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 30px; }
+
+.breadcrumbs {
+  text-align: right; }
+
+/**
+ * 1.0 - Site
+ */
+.site-content {
+  padding: 75px 0; }
+
+/**
+ * 1.0 - Hentry
+ */
+.hentry {
+  padding-top: 35px;
+  border: 1px solid #ecf0f1; }
+
+.hentry.has-post-thumbnail {
+  padding-top: 0; }
+
+.hentry + .hentry {
+  margin-top: 7.6923%; }
+
+.post-thumbnail {
+  display: block;
+  margin-bottom: 35px; }
+
+.entry-header {
+  padding: 0 35px; }
+
+.entry-title {
+  margin-top: 0;
+  margin-bottom: 0.9231em; }
+
+.entry-content,
+.entry-summary {
+  padding: 0 35px 35px; }
+
+.entry-footer {
+  border-top: 1px solid #ecf0f1;
+  padding: 35px;
+  background-color: rgba(236, 240, 241, 0.5); }
+
+.updated:not(.published) {
+  display: none; }
+
+.sticky {
+    background-color: #ecf0f1;
+}
+
+.social-navigation a:before,
+.secondary-toggle:before,
+.dropdown-toggle:after,
+.bypostauthor > article .fn:after,
+.comment-reply-title small a:before,
+.comment-navigation .nav-next a:after,
+.comment-navigation .nav-previous a:before,
+.posted-on:before,
+.byline:before,
+.cat-links:before,
+.tags-links:before,
+.comments-link:before,
+.entry-format:before,
+.edit-link:before,
+.full-size-link:before,
+.pagination .prev:before,
+.pagination .next:before,
+.image-navigation a:before,
+.image-navigation a:after,
+.format-link .entry-title a:after,
+.entry-content .more-link:after,
+.entry-summary .more-link:after,
+.author-link:after {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: "Genericons";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  speak: none;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  vertical-align: top; }
+
+.posted-on,
+.byline,
+.cat-links,
+.tags-links,
+.comments-link,
+.entry-format,
+.full-size-link {
+  margin-right: 1em; }
+
+.format-aside .entry-format:before {
+  content: "\f101"; }
+
+.format-image .entry-format:before {
+  content: "\f473"; }
+
+.format-gallery .entry-format:before {
+  content: "\f103"; }
+
+.format-video .entry-format:before {
+  content: "\f104"; }
+
+.format-status .entry-format:before {
+  content: "\f105"; }
+
+.format-quote .entry-format:before {
+  content: "\f106"; }
+
+.format-link .entry-format:before {
+  content: "\f107"; }
+
+.format-chat .entry-format:before {
+  content: "\f108"; }
+
+.format-audio .entry-format:before {
+  content: "\f109"; }
+
+.posted-on:before {
+  content: "\f307"; }
+
+.byline:before {
+  content: "\f304"; }
+
+.cat-links:before {
+  content: "\f301"; }
+
+.tags-links:before {
+  content: "\f302"; }
+
+.comments-link:before {
+  content: "\f300"; }
+
+.full-size-link:before {
+  content: "\f402"; }
+
+.edit-link:before {
+  content: "\f411"; }
+
+.author-info {
+  margin: 0 35px;
+  padding: 35px 0;
+  border-top: 1px solid #ecf0f1; }
+
+/**
+ * 1.0 - Widgets
+ */
+.widget {
+  margin-bottom: 65px; }
+
+.widget-title {
+  margin: 0 0 1.5em;
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  font-family: "Noto Sans", sans-serif; }
+
+.widget_archive ul,
+.widget_categories ul,
+.widget_links ul,
+.widget_meta ul,
+.widget_nav_menu ul,
+.widget_pages ul,
+.widget_recent_comments ul,
+.widget_recent_entries ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+
+.widget_archive li,
+.widget_categories li,
+.widget_links li,
+.widget_meta li,
+.widget_nav_menu li,
+.widget_pages li,
+.widget_recent_comments li,
+.widget_recent_entries li {
+  border-top: 1px solid #eaeaea;
+  border-top: 1px solid rgba(51, 51, 51, 0.1);
+  padding: 0.7667em 0; }
+
+.widget_archive li:first-child,
+.widget_categories li:first-child,
+.widget_links li:first-child,
+.widget_meta li:first-child,
+.widget_nav_menu li:first-child,
+.widget_pages li:first-child,
+.widget_recent_comments li:first-child,
+.widget_recent_entries li:first-child {
+  border-top: 0;
+  padding-top: 0; }
+
+.widget_archive li:last-child,
+.widget_categories li:last-child,
+.widget_links li:last-child,
+.widget_meta li:last-child,
+.widget_nav_menu li:last-child,
+.widget_pages li:last-child,
+.widget_recent_comments li:last-child,
+.widget_recent_entries li:last-child {
+  padding-bottom: 0; }
+
+/**
+ * 1.0 - Comment
+ */
+/*--------------
+    Comments
+---------------*/
+.comments-area {
+  border: 1px solid  #ecf0f1;
+  padding: 35px; }
+
+/*
+* # Semantic UI - 1.7.3
+* https://github.com/Semantic-Org/Semantic-UI
+* http://www.semantic-ui.com/
+*
+* Copyright 2014 Contributors
+* Released under the MIT license
+* http://opensource.org/licenses/MIT
+*
+*/
+/*******************************
+            Standard
+*******************************/
+/*--------------
+    Comments
+---------------*/
+.ui.comments {
+  margin: 1.5em 0em;
+  max-width: 650px; }
+
+.ui.comments:first-child {
+  margin-top: 0em; }
+
+.ui.comments:last-child {
+  margin-bottom: 0em; }
+
+/*--------------
+     Comment
+---------------*/
+.ui.comments .comment {
+  position: relative;
+  background: none;
+  margin: 0.5em 0em 0em;
+  padding: 0.5em 0em 0em;
+  border: none;
+  border-top: none;
+  line-height: 1.2; }
+
+.ui.comments .comment:first-child {
+  margin-top: 0em;
+  padding-top: 0em; }
+
+/*--------------------
+    Nested Comments
+---------------------*/
+.ui.comments .comment .comments {
+  margin: 0em 0em 0.5em 0.5em;
+  padding: 1em 0em 1em 1em; }
+
+.ui.comments .comment .comments:before {
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+
+.ui.comments .comment .comments .comment {
+  border: none;
+  border-top: none;
+  background: none; }
+
+/*--------------
+     Avatar
+---------------*/
+.ui.comments .comment .avatar {
+  display: block;
+  width: 2.5em;
+  height: auto;
+  float: left;
+  margin: 0.2em 0em 0em; }
+
+.ui.comments .comment img.avatar,
+.ui.comments .comment .avatar img {
+  display: block;
+  margin: 0em auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem; }
+
+/*--------------
+     Content
+---------------*/
+.ui.comments .comment > .content {
+  display: block; }
+
+/* If there is an avatar move content over */
+.ui.comments .comment > .avatar ~ .content {
+  margin-left: 3.5em; }
+
+/*--------------
+     Author
+---------------*/
+.ui.comments .comment .author {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold; }
+
+.ui.comments .comment a.author {
+  cursor: pointer; }
+
+.ui.comments .comment a.author:hover {
+  color: #00b2f3; }
+
+/*--------------
+     Metadata
+---------------*/
+.ui.comments .comment .metadata {
+  display: inline-block;
+  margin-left: 0.5em;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.875em; }
+
+.ui.comments .comment .metadata > * {
+  display: inline-block;
+  margin: 0em 0.5em 0em 0em; }
+
+.ui.comments .comment .metadata > :last-child {
+  margin-right: 0em; }
+
+/*--------------------
+     Comment Text
+---------------------*/
+.ui.comments .comment .text {
+  margin: 0.25em 0em 0.5em;
+  font-size: 1em;
+  word-wrap: break-word;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.3; }
+
+/*--------------------
+     User Actions
+---------------------*/
+.ui.comments .comment .actions {
+  font-size: 0.875em; }
+
+.ui.comments .comment .actions a {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0em 0.75em 0em 0em;
+  color: rgba(0, 0, 0, 0.4); }
+
+.ui.comments .comment .actions a:last-child {
+  margin-right: 0em; }
+
+.ui.comments .comment .actions a.active,
+.ui.comments .comment .actions a:hover {
+  color: rgba(0, 0, 0, 0.8); }
+
+/*--------------------
+      Reply Form
+---------------------*/
+.ui.comments > .reply.form {
+  margin-top: 1em; }
+
+.ui.comments .comment .reply.form {
+  width: 100%;
+  margin-top: 1em; }
+
+.ui.comments .reply.form textarea {
+  font-size: 1em;
+  height: 12em; }
+
+/*******************************
+            State
+*******************************/
+.ui.collapsed.comments,
+.ui.comments .collapsed.comments,
+.ui.comments .collapsed.comment {
+  display: none; }
+
+/*******************************
+           Variations
+*******************************/
+/*--------------------
+        Threaded
+---------------------*/
+.ui.threaded.comments .comment .comments {
+  margin: -1.5em 0 -1em 1.25em;
+  padding: 3em 0em 2em 2.25em;
+  box-shadow: -1px 0px 0px rgba(39, 41, 43, 0.15); }
+
+/*--------------------
+        Minimal
+---------------------*/
+.ui.minimal.comments .comment .actions {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: auto;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s; }
+
+.ui.minimal.comments .comment > .content:hover > .actions {
+  opacity: 1; }
+
+/*--------------------
+       Sizes
+---------------------*/
+.ui.small.comments {
+  font-size: 0.9em; }
+
+.ui.comments {
+  font-size: 1em; }
+
+.ui.large.comments {
+  font-size: 1.1em; }
+
+.ui.huge.comments {
+  font-size: 1.2em; }
+
+/*******************************
+         Theme Overrides
+*******************************/
+/*******************************
+    User Variable Overrides
+*******************************/
+/**
+ * 1.0 - Supplementary
+ */
+#supplementary {
+  background-color: #ecf0f1;
+  padding: 115px 0 50px 0;
+  position: relative; }
+
+#supplementary:before {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 10px;
+  border-bottom-width: 0;
+  border-top-color: #ffffff;
+  top: 0;
+  left: 50%;
+  content: "";
+  margin-left: -10px; }
+
+.site-info-wrap {
+  padding: 50px 0; }
+
+@media (min-width: 768px) {
+    .navbar-nav > li > .dropdown-menu .dropdown > .dropdown-menu {
+        left: 100%;
+        top: 0;
+    }
+
+    .navbar-nav > li > .dropdown-menu .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li.open > .dropdown-menu .dropdown > .dropdown-menu {
+        padding-left: 15px;
+    }
+
+    .navbar-nav > li.open > .dropdown-menu .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
